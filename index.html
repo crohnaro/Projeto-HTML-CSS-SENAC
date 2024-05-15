@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>São João Del Rei</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <header>
+        <nav class="navBar">
+          <a href="">Sobre</a>
+          <a href="">Gastronomia</a>
+          <a href="">Hoteis</a>
+          <a href="">Pontos Turisticos</a>
+          <a href="">Contato</a>
+        </nav>
+      </header>
+      <section class="mainSection">
+        <div class="mainSectionContainer">
+          <div class="mainSectionTexts">
+            <h1>São João Del Rei</h1>
+            <h2>Como você nunca viu!</h2>
+            <button>Entre em contato</button>
+          </div>
+
+          <div class="swiper mySwiper" style="width: 800px; height: 600px;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-color: blueviolet;"></div>
+              <div class="swiper-slide" style="background-color: aqua;">Slide 2</div>
+              <div class="swiper-slide" style="background-color: brown;">Slide 3</div>
+              <div class="swiper-slide" style="background-color: blue;">Slide 4</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</html>
